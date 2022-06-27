@@ -1,0 +1,424 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(43, 44, 44, 0.8);
+}
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+body {
+    background: rgb(211, 214, 214);
+    margin: 30px 50px;
+    line-height: 1.4;
+
+}
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+ 
+/*navigation*/
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+.main-nav a {
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+.main-nav a:hover {
+    background: var(--dark);
+    color: var(--light)
+}
+/* top container*/
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        'showcase showcase top-box-a'
+        'showcase showcase top-box-b';
+}
+/* showcase */
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background: url(https://image.ibb.co/kYJK8x/showcase.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light);
+}
+.showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--light);
+}
+/* top box */
+.top-box {
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+.top-box .price {
+    font-size: 2.5rem;
+}
+.container .card {
+    height: 220px;
+    max-width: 200px;
+    position: relative;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    background: rgb(231, 213, 224);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgb(204, 200, 142);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+    height: 420px;
+}
+
+.containe .card .imgbox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+}
+
+.container .card .imgbox img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -100px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.3s;
+}
+
+
+.container .card1 {
+    height: 220px;
+    max-width: 200px;
+    position: relative;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    background: rgb(161, 99, 137);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgb(135, 171, 182);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card1:hover {
+    height: 420px;
+}
+
+.containe .card1 .imgbox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+}
+
+.container .card1 .imgbox img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card1 .content {
+    position: relative;
+    margin-top: -100px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card1:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.3s;
+}
+
+
+/* boxes */
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+
+}
+
+.boxes:hover {
+    height: 530px;
+    box-shadow: 
+    inset 0 0 60px #fff,
+    inset 20px 0 80px rgb(18, 204, 89),
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px rgb(18, 202, 88),
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px rgb(20, 221, 70),
+    10px 0 80px #0ff;
+    transform: translateY(0px);
+}
+
+.boxes .box p {
+    position: relative;
+    margin-top: -350px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.boxes .box:hover p {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.5s;
+}
+
+.boxes .box img{
+    position: relative;
+    margin-top: -100px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.boxes .box:hover img {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.3s;
+    max-width: 100%;
+    border-radius: 100px;
+}
+
+/* info */
+.info {
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+/* portfolio */
+.portfolio {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.portfolio img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+
+.portfolio.card3 {
+    position: relative;
+}
+
+.portfolio .card3 .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.4s;
+}
+
+.portfolio .card3 .face.face1{
+    position: relative;
+    background:#333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.portfolio .card3:hover .face.face1{
+    box-shadow: 
+    inset 0 0 60px #fff,
+    inset 20px 0 80px rgb(18, 204, 89),
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px rgb(18, 202, 88),
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px rgb(20, 221, 70),
+    10px 0 80px #0ff;
+    transform: translateY(0px);
+}
+
+.portfolio.card3 .face.face1 .content{
+    opacity: 0.2;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.portfolio .card3:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.portfolio .card3 .face.face1.content i{
+    font-size: 3em;
+    color: rgb(231, 60, 60);
+    display:inline-block;
+}
+
+.portfolio.card3 .face.face1 .content h3{
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+.portfolio.card3 .face.face1 .content a{
+ transition: 0.5s; 
+}
+
+.portfolio .card3 .face.face2{
+    position: relative;
+    background: #fff;
+    dispLay: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+.portfolio .card3:hover .face.face2{
+    transform: translateY(0px);
+}
+
+.portfolio .card3 .face.face2 .content p, a{
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+   color: #333;
+}
+
+.portfolio .card3 .face.face2 .content  a{
+   text-decoration: none;
+   color: #fff;
+   box-sizing: border-box;
+   padding: 10px 24px;
+   margin: 15px 0 0;
+   display: inline-block;
+   background: #444;
+ }
+
+
+
+/* footer */
+footer {
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+/* media queries */
+@media (max-width: 700px) {
+    .top-container {
+        grid-template-areas: 
+        'showcase showcase'
+        'container container';
+    }
+    .showcase h1 {
+        font-size: 2.5rem;
+    }
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+    .info {
+        grid-template-columns: 1fr;
+    }
+    .info .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media (max-whidth: 500px) {
+    .top-container {
+        grid-template-areas: 
+        'showcase'
+        'top-box-a'
+        'top-box-b';
+    }
+}
+
+
+

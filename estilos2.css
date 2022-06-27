@@ -1,0 +1,110 @@
+/* portfolio */
+.portfolio1 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.portfolio1 img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+/*
+.portfolio1:hover {
+    height: 530px;
+    box-shadow: 
+    inset 0 0 60px #fff,
+    inset 20px 0 80px rgb(18, 204, 89),
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px rgb(18, 202, 88),
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px rgb(20, 221, 70),
+    10px 0 80px #0ff;
+    transform: translateY(0px);
+}
+
+.portfolio1 .box p {
+    position: relative;
+    margin-top: -350px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.portfolio1 .box:hover p {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.5s;
+}
+
+.portfolio1 .box img{
+    position: relative;
+    margin-top: -100px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.portfolio1 .box:hover img {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.3s;
+    max-width: 100%;
+    border-radius: 100px;
+}*/
+.container .card {
+    height: 220px;
+    max-width: 200px;
+    position: relative;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    background: rgb(231, 213, 224);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgb(204, 200, 142);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+    height: 420px;
+}
+
+.containe .card .imgbox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+}
+
+.container .card .imgbox img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -100px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.3s;
+}
+
